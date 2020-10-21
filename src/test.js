@@ -1,8 +1,26 @@
-import firebase from './firebase/firebase.utiles'
-import 'firebase/firestore'
+import React from "react";
 
-const firestore = firebase.firestore();
+class TestComp extends React.Component {
+  constructor() {
+    super();
 
-const users = firestore.doc('users/EUi5NJ45NSsO2DQeDXjG');
+    this.state = {
+      sentence: "I Love my new keyboard!",
+      sound:
+        "It has a good sound, it is not the type I wish to have but anyway it is good",
+        keyboard: 'I have a Logitch G915 Tactile ( Price: 250$ )'
+    };
+  }
 
-console.log(users);
+  render() {
+    return (
+      <div>
+        <h1>{this.state.sentence}</h1>
+        <p>{this.state.sound}</p>
+    <b>{this.state.keyboard}</b>
+      </div>
+    );
+  }
+}
+
+export default TestComp;

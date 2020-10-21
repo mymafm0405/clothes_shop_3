@@ -43,8 +43,8 @@ export const createUserProfile = async(userAuth, additionalData) => {
       console.log(error)
     }
 
-    return userRef;
   }
+  return userRef;
 }
 
 export default firebase;
