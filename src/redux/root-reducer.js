@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
     user: userReducer,
     cart: cartReducer,
     directory: directoryReducer,
-    collections: collectionsReducer
+    shop: collectionsReducer
 })
 
 const persistConfig = {
